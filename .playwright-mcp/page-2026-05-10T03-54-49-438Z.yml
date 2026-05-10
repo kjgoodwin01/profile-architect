@@ -1,0 +1,243 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - img [ref=e10]
+        - generic [ref=e12]:
+          - paragraph [ref=e13]: We've updated our Terms of Service
+          - generic [ref=e14]:
+            - generic [ref=e15]: ·
+            - button "Learn more" [ref=e17] [cursor=pointer]
+      - button "Dismiss banner" [ref=e18] [cursor=pointer]:
+        - img [ref=e20]
+    - banner [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - link "Supabase" [ref=e27] [cursor=pointer]:
+            - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou
+            - img "Supabase" [ref=e28]
+          - generic [ref=e30]:
+            - img [ref=e32]
+            - generic [ref=e34]:
+              - link "profile-architect" [ref=e35] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov
+                - img [ref=e36]
+                - generic "profile-architect" [ref=e39]
+              - button [ref=e40] [cursor=pointer]:
+                - img [ref=e42]
+            - img [ref=e46]
+            - generic [ref=e48]:
+              - link "main Production" [ref=e49] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov
+                - generic "main" [ref=e50]
+                - generic [ref=e51]: Production
+              - button [ref=e52] [cursor=pointer]:
+                - img [ref=e54]
+          - button "Connect" [ref=e58] [cursor=pointer]:
+            - img [ref=e60]
+            - generic [ref=e62]: Connect
+        - generic [ref=e63]:
+          - generic [ref=e65] [cursor=pointer]: Feedback
+          - generic [ref=e66]:
+            - button "Search..." [ref=e67]:
+              - generic [ref=e68]:
+                - img [ref=e69]
+                - paragraph [ref=e72]: Search...
+              - generic [ref=e74]: Ctrl K
+            - button [ref=e75] [cursor=pointer]:
+              - img [ref=e77]
+            - button [ref=e81] [cursor=pointer]:
+              - img [ref=e83]
+            - button [ref=e85] [cursor=pointer]:
+              - img [ref=e87]
+            - button [ref=e89] [cursor=pointer]:
+              - img [ref=e93]
+          - button "kjgoodwin01" [ref=e96] [cursor=pointer]:
+            - img "kjgoodwin01" [ref=e98]
+    - generic [ref=e99]:
+      - generic [ref=e103]:
+        - list [ref=e106]:
+          - generic [ref=e107]:
+            - listitem [ref=e108]:
+              - link "Project Overview" [ref=e109] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov
+                - img [ref=e110]
+                - generic: Project Overview
+            - listitem [ref=e112]:
+              - link "Table Editor" [ref=e113] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/editor
+                - img [ref=e114]
+                - generic: Table Editor
+            - listitem [ref=e116]:
+              - link "SQL Editor" [ref=e117] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/sql
+                - img [ref=e118]
+                - generic: SQL Editor
+          - generic [ref=e120]:
+            - listitem [ref=e121]:
+              - link "Database" [ref=e122] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/database/schemas
+                - img [ref=e123]
+                - generic: Database
+            - listitem [ref=e127]:
+              - link "Authentication" [ref=e128] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/users
+                - img [ref=e129]
+                - generic: Authentication
+            - listitem [ref=e131]:
+              - link "Storage" [ref=e132] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/storage/files
+                - img [ref=e133]
+                - generic: Storage
+            - listitem [ref=e135]:
+              - link "Edge Functions" [ref=e136] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/functions
+                - img [ref=e137]
+                - generic: Edge Functions
+            - listitem [ref=e142]:
+              - link "Realtime" [ref=e143] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/realtime/inspector
+                - img [ref=e144]
+                - generic: Realtime
+          - generic [ref=e146]:
+            - listitem [ref=e148]:
+              - link "Advisors" [ref=e149] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/advisors/security
+                - img [ref=e150]
+                - generic: Advisors
+            - listitem [ref=e152]:
+              - link "Observability" [ref=e153] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/observability
+                - img [ref=e154]
+                - generic: Observability
+            - listitem [ref=e162]:
+              - link "Logs" [ref=e163] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/logs/explorer
+                - img [ref=e164]
+                - generic: Logs
+            - listitem [ref=e165]:
+              - link "Integrations" [ref=e166] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/integrations
+                - img [ref=e167]
+                - generic: Integrations
+          - listitem [ref=e171]:
+            - link "Project Settings" [ref=e172] [cursor=pointer]:
+              - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/general
+              - img [ref=e173]
+              - generic: Project Settings
+        - button [ref=e178] [cursor=pointer]:
+          - img [ref=e180]
+      - generic [ref=e187]:
+        - generic [ref=e191]:
+          - heading "Authentication" [level=4] [ref=e193]
+          - menu "Sidebar" [disabled] [ref=e196]:
+            - list [ref=e197]:
+              - generic [ref=e200]:
+                - generic [ref=e204]: Manage
+                - generic [ref=e205]:
+                  - link "Users" [disabled] [ref=e206] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/users
+                    - menuitem "Users" [disabled] [ref=e207]:
+                      - generic [ref=e211]: Users
+                  - link "OAuth Apps" [disabled] [ref=e212] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/oauth-apps
+                    - menuitem "OAuth Apps" [disabled] [ref=e213]:
+                      - generic [ref=e217]: OAuth Apps
+              - generic [ref=e221]:
+                - generic [ref=e225]: Notifications
+                - link "Email" [disabled] [ref=e227] [cursor=pointer]:
+                  - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/templates
+                  - menuitem "Email" [disabled] [ref=e228]:
+                    - generic [ref=e232]: Email
+              - generic [ref=e236]:
+                - generic [ref=e240]: Configuration
+                - generic [ref=e241]:
+                  - link "Policies" [disabled] [ref=e242] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/policies
+                    - menuitem "Policies" [disabled] [ref=e243]:
+                      - generic [ref=e247]: Policies
+                  - link "Sign In / Providers" [disabled] [ref=e248] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/providers
+                    - menuitem "Sign In / Providers" [disabled] [ref=e249]:
+                      - generic [ref=e253]: Sign In / Providers
+                  - link "OAuth Server Beta" [disabled] [ref=e254] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/oauth-server
+                    - menuitem "OAuth Server Beta" [disabled] [ref=e255]:
+                      - generic [ref=e258]:
+                        - generic [ref=e259]: OAuth Server
+                        - generic [ref=e260]: Beta
+                  - link "Sessions" [disabled] [ref=e261] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/sessions
+                    - menuitem "Sessions" [disabled] [ref=e262]:
+                      - generic [ref=e266]: Sessions
+                  - link "Rate Limits" [disabled] [ref=e267] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/rate-limits
+                    - menuitem "Rate Limits" [disabled] [ref=e268]:
+                      - generic [ref=e272]: Rate Limits
+                  - link "Multi-Factor" [disabled] [ref=e273] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/mfa
+                    - menuitem "Multi-Factor" [disabled] [ref=e274]:
+                      - generic [ref=e278]: Multi-Factor
+                  - link "URL Configuration" [disabled] [ref=e279] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/url-configuration
+                    - menuitem "URL Configuration" [disabled] [ref=e280]:
+                      - generic [ref=e284]: URL Configuration
+                  - link "Attack Protection" [disabled] [ref=e285] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/protection
+                    - menuitem "Attack Protection" [disabled] [ref=e286]:
+                      - generic [ref=e290]: Attack Protection
+                  - link "Auth Hooks Beta" [disabled] [ref=e291] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/hooks
+                    - menuitem "Auth Hooks Beta" [disabled] [ref=e292]:
+                      - generic [ref=e295]:
+                        - generic [ref=e296]: Auth Hooks
+                        - generic [ref=e297]: Beta
+                  - link "Audit Logs" [disabled] [ref=e298] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/audit-logs
+                    - menuitem "Audit Logs" [disabled] [ref=e299]:
+                      - generic [ref=e303]: Audit Logs
+                  - link "Performance" [disabled] [ref=e304] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/performance
+                    - menuitem "Performance" [disabled] [ref=e305]:
+                      - generic [ref=e309]: Performance
+        - separator [disabled] [ref=e310]:
+          - img [ref=e312]
+        - main [ref=e321]:
+          - generic [ref=e322]:
+            - heading "Users" [level=3] [ref=e325]
+            - generic [ref=e326]:
+              - generic [ref=e327]:
+                - generic [ref=e328]:
+                  - img [ref=e330]
+                  - combobox [ref=e333]:
+                    - generic: Email address
+                    - img [ref=e334]
+                  - group [ref=e336]:
+                    - textbox "Search by email" [ref=e337]
+                - generic [ref=e339] [cursor=pointer]:
+                  - generic [ref=e340]: All columns
+                  - img [ref=e342]
+                - button "Sorted by user ID" [disabled] [ref=e344]:
+                  - img [ref=e346]
+                  - generic [ref=e348]: Sorted by user ID
+              - generic [ref=e349]:
+                - button [ref=e350] [cursor=pointer]:
+                  - img [ref=e352]
+                - button "Add user" [ref=e357] [cursor=pointer]:
+                  - generic [ref=e358]: Add user
+                  - img [ref=e360]
+            - grid [ref=e368]:
+              - row "UID Display name Email Phone" [ref=e369]:
+                - columnheader [ref=e370]
+                - columnheader "UID" [ref=e371]:
+                  - paragraph [ref=e374]: UID
+                - columnheader "Display name" [ref=e376]:
+                  - paragraph [ref=e379]: Display name
+                - columnheader "Email" [ref=e381]:
+                  - paragraph [ref=e384]: Email
+                - columnheader "Phone" [ref=e386]:
+                  - paragraph [ref=e389]: Phone
+            - generic [ref=e398]:
+              - img [ref=e399]
+              - text: Loading...
+  - alert [ref=e401]: Users | Authentication | Supabase

@@ -1,0 +1,119 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e111]:
+    - generic [ref=e115]:
+      - generic [ref=e117]:
+        - img [ref=e118]
+        - generic [ref=e120]:
+          - paragraph [ref=e121]: We've updated our Terms of Service
+          - generic [ref=e122]:
+            - generic [ref=e123]: ·
+            - button "Learn more" [ref=e125] [cursor=pointer]
+      - button "Dismiss banner" [ref=e126] [cursor=pointer]:
+        - img [ref=e128]
+    - banner [ref=e132]:
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - link "Supabase" [ref=e135] [cursor=pointer]:
+            - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou
+            - img "Supabase" [ref=e136]
+          - generic [ref=e137]:
+            - img [ref=e139]
+            - generic [ref=e141]:
+              - link "kjgoodwin01's Org Free" [ref=e142] [cursor=pointer]:
+                - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou
+                - img [ref=e143]
+                - generic [ref=e153]: kjgoodwin01's Org
+                - generic [ref=e154]: Free
+              - button [ref=e155] [cursor=pointer]:
+                - img [ref=e157]
+        - generic [ref=e160]:
+          - generic [ref=e162] [cursor=pointer]: Feedback
+          - generic [ref=e163]:
+            - button "Search..." [ref=e164]:
+              - generic [ref=e165]:
+                - img [ref=e166]
+                - paragraph [ref=e169]: Search...
+              - generic [ref=e171]: Ctrl K
+            - button [ref=e172] [cursor=pointer]:
+              - img [ref=e174]
+            - button [ref=e178] [cursor=pointer]:
+              - img [ref=e180]
+          - button "kjgoodwin01" [ref=e182] [cursor=pointer]:
+            - img "kjgoodwin01" [ref=e184]
+    - generic [ref=e185]:
+      - generic [ref=e189]:
+        - list [ref=e192]:
+          - generic [ref=e193]:
+            - listitem [ref=e194]:
+              - link "Projects" [ref=e195] [cursor=pointer]:
+                - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou
+                - img [ref=e196]
+                - generic: Projects
+            - listitem [ref=e206]:
+              - link "Team" [ref=e207] [cursor=pointer]:
+                - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou/team
+                - img [ref=e208]
+                - generic: Team
+            - listitem [ref=e213]:
+              - link "Integrations" [ref=e214] [cursor=pointer]:
+                - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou/integrations
+                - img [ref=e215]
+                - generic: Integrations
+            - listitem [ref=e218]:
+              - link "Usage" [ref=e219] [cursor=pointer]:
+                - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou/usage
+                - img [ref=e220]
+                - generic: Usage
+            - listitem [ref=e223]:
+              - link "Billing" [ref=e224] [cursor=pointer]:
+                - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou/billing
+                - img [ref=e225]
+                - generic: Billing
+            - listitem [ref=e228]:
+              - link "Organization Settings" [ref=e229] [cursor=pointer]:
+                - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou/general
+                - img [ref=e230]
+                - generic: Organization Settings
+        - button [ref=e235] [cursor=pointer]:
+          - img [ref=e237]
+      - main [ref=e244]:
+        - generic [ref=e245]:
+          - heading "Projects" [level=1] [ref=e252]
+          - generic [ref=e255]:
+            - generic [ref=e256]:
+              - generic [ref=e257]:
+                - group [ref=e258]:
+                  - textbox "Search for a project" [ref=e259]
+                  - group [ref=e260]:
+                    - img [ref=e261]
+                  - group
+                - generic [ref=e264]:
+                  - generic [ref=e265] [cursor=pointer]:
+                    - generic [ref=e266]: Status
+                    - img [ref=e268]
+                  - button "Sorted by name" [ref=e270] [cursor=pointer]:
+                    - img [ref=e272]
+                    - generic [ref=e274]: Sorted by name
+              - generic [ref=e275]:
+                - group [ref=e276]:
+                  - radio [checked] [ref=e277]:
+                    - img [ref=e278]
+                  - radio [ref=e280]:
+                    - img [ref=e281]
+                - link "New project" [ref=e282] [cursor=pointer]:
+                  - /url: /dashboard/new/nfxvjmuxooqgwzgjhyou
+                  - img [ref=e284]
+                  - generic [ref=e285]: New project
+            - list [ref=e287]:
+              - listitem [ref=e288]:
+                - link "macrotrack AWS | us-east-2 nano" [ref=e289] [cursor=pointer]:
+                  - /url: /dashboard/project/hyfcmoprhgkykbupkbrp
+                  - generic [ref=e291]:
+                    - generic [ref=e292]:
+                      - generic [ref=e293]:
+                        - heading "macrotrack" [level=5] [ref=e294]
+                        - button [ref=e296]:
+                          - img [ref=e298]
+                      - paragraph [ref=e302]: AWS | us-east-2
+                    - generic [ref=e306]: nano
+  - alert [ref=e109]: Supabase

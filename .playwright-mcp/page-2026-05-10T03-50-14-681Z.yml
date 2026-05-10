@@ -1,0 +1,288 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - img [ref=e10]
+        - generic [ref=e12]:
+          - paragraph [ref=e13]: We've updated our Terms of Service
+          - generic [ref=e14]:
+            - generic [ref=e15]: ·
+            - button "Learn more" [ref=e17] [cursor=pointer]
+      - button "Dismiss banner" [ref=e18] [cursor=pointer]:
+        - img [ref=e20]
+    - banner [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - link "Supabase" [ref=e27] [cursor=pointer]:
+            - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou
+            - img "Supabase" [ref=e28]
+          - generic [ref=e29]:
+            - img [ref=e344]
+            - generic [ref=e346]:
+              - link "kjgoodwin01's Org Free" [ref=e347] [cursor=pointer]:
+                - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou
+                - img [ref=e348]
+                - generic [ref=e358]: kjgoodwin01's Org
+                - generic [ref=e359]: Free
+              - button [ref=e360] [cursor=pointer]:
+                - img [ref=e362]
+            - generic [ref=e30]:
+              - img [ref=e32]
+              - generic [ref=e34]:
+                - link "profile-architect" [ref=e35] [cursor=pointer]:
+                  - /url: /dashboard/project/mezqlcoxyrxvaznjlvov
+                  - img [ref=e36]
+                  - generic "profile-architect" [ref=e39]
+                - button [ref=e40] [cursor=pointer]:
+                  - img [ref=e42]
+              - img [ref=e46]
+              - generic [ref=e365]:
+                - link "main Production" [ref=e366] [cursor=pointer]:
+                  - /url: /dashboard/project/mezqlcoxyrxvaznjlvov
+                  - generic "main" [ref=e367]
+                  - generic [ref=e368]: Production
+                - button [ref=e369] [cursor=pointer]:
+                  - img [ref=e371]
+          - button "Connect" [ref=e50] [cursor=pointer]:
+            - img [ref=e52]
+            - generic [ref=e54]: Connect
+        - generic [ref=e55]:
+          - generic [ref=e57] [cursor=pointer]: Feedback
+          - generic [ref=e58]:
+            - button "Search..." [ref=e59]:
+              - generic [ref=e60]:
+                - img [ref=e61]
+                - paragraph [ref=e64]: Search...
+              - generic [ref=e66]: Ctrl K
+            - button [ref=e67] [cursor=pointer]:
+              - img [ref=e69]
+            - button [ref=e73] [cursor=pointer]:
+              - img [ref=e75]
+            - button [ref=e77] [cursor=pointer]:
+              - img [ref=e79]
+            - button [ref=e81] [cursor=pointer]:
+              - img [ref=e85]
+          - button "kjgoodwin01" [ref=e88] [cursor=pointer]:
+            - img "kjgoodwin01" [ref=e90]
+    - generic [ref=e91]:
+      - generic [ref=e95]:
+        - list [ref=e98]:
+          - generic [ref=e99]:
+            - listitem [ref=e100]:
+              - link "Project Overview" [ref=e101] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov
+                - img [ref=e102]
+                - generic: Project Overview
+            - listitem [ref=e104]:
+              - link "Table Editor" [ref=e105] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/editor
+                - img [ref=e106]
+                - generic: Table Editor
+            - listitem [ref=e108]:
+              - link "SQL Editor" [ref=e109] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/sql
+                - img [ref=e110]
+                - generic: SQL Editor
+          - generic [ref=e112]:
+            - listitem [ref=e113]:
+              - link "Database" [ref=e114] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/database/schemas
+                - img [ref=e115]
+                - generic: Database
+            - listitem [ref=e119]:
+              - link "Authentication" [ref=e120] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/users
+                - img [ref=e121]
+                - generic: Authentication
+            - listitem [ref=e123]:
+              - link "Storage" [ref=e124] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/storage/files
+                - img [ref=e125]
+                - generic: Storage
+            - listitem [ref=e127]:
+              - link "Edge Functions" [ref=e128] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/functions
+                - img [ref=e129]
+                - generic: Edge Functions
+            - listitem [ref=e134]:
+              - link "Realtime" [ref=e135] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/realtime/inspector
+                - img [ref=e136]
+                - generic: Realtime
+          - generic [ref=e138]:
+            - listitem [ref=e140]:
+              - link "Advisors" [ref=e141] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/advisors/security
+                - img [ref=e142]
+                - generic: Advisors
+            - listitem [ref=e144]:
+              - link "Observability" [ref=e145] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/observability
+                - img [ref=e146]
+                - generic: Observability
+            - listitem [ref=e154]:
+              - link "Logs" [ref=e155] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/logs/explorer
+                - img [ref=e156]
+                - generic: Logs
+            - listitem [ref=e157]:
+              - link "Integrations" [ref=e158] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/integrations
+                - img [ref=e159]
+                - generic: Integrations
+          - listitem [ref=e163]:
+            - link "Project Settings" [ref=e164] [cursor=pointer]:
+              - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/general
+              - img [ref=e165]
+              - generic: Project Settings
+        - button [ref=e170] [cursor=pointer]:
+          - img [ref=e172]
+      - generic [ref=e179]:
+        - generic [ref=e183]:
+          - heading "Settings" [level=4] [ref=e185]
+          - menu "Sidebar" [disabled] [ref=e188]:
+            - list [ref=e189]:
+              - generic [ref=e192]:
+                - generic [ref=e196]: Configuration
+                - generic [ref=e197]:
+                  - link "General" [disabled] [ref=e198] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/general
+                    - menuitem "General" [disabled] [ref=e199]:
+                      - generic "General" [ref=e202]:
+                        - generic [ref=e203]: General
+                  - link "Compute and Disk" [disabled] [ref=e204] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/compute-and-disk
+                    - menuitem "Compute and Disk" [disabled] [ref=e205]:
+                      - generic "Compute and Disk" [ref=e208]:
+                        - generic [ref=e209]: Compute and Disk
+                  - link "Infrastructure" [disabled] [ref=e210] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/infrastructure
+                    - menuitem "Infrastructure" [disabled] [ref=e211]:
+                      - generic "Infrastructure" [ref=e214]:
+                        - generic [ref=e215]: Infrastructure
+                  - link "Integrations" [disabled] [ref=e216] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/integrations
+                    - menuitem "Integrations" [disabled] [ref=e217]:
+                      - generic "Integrations" [ref=e220]:
+                        - generic [ref=e221]: Integrations
+                  - link "API Keys" [disabled] [ref=e222] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/api-keys
+                    - menuitem "API Keys" [disabled] [ref=e223]:
+                      - generic "API Keys" [ref=e226]:
+                        - generic [ref=e227]: API Keys
+                  - link "JWT Keys" [disabled] [ref=e228] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/jwt
+                    - menuitem "JWT Keys" [disabled] [ref=e229]:
+                      - generic "JWT Keys" [ref=e232]:
+                        - generic [ref=e233]: JWT Keys
+                  - link "Log Drains" [disabled] [ref=e234] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/log-drains
+                    - menuitem "Log Drains" [disabled] [ref=e235]:
+                      - generic "Log Drains" [ref=e238]:
+                        - generic [ref=e239]: Log Drains
+                  - link "Add-ons" [disabled] [ref=e240] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/addons
+                    - menuitem "Add-ons" [disabled] [ref=e241]:
+                      - generic "Add-ons" [ref=e244]:
+                        - generic [ref=e245]: Add-ons
+              - generic [ref=e249]:
+                - generic [ref=e253]: Integrations
+                - generic [ref=e254]:
+                  - link "Data API" [disabled] [ref=e255] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/integrations/data_api/overview
+                    - menuitem "Data API" [disabled] [ref=e256]:
+                      - generic [ref=e258]:
+                        - generic "Data API" [ref=e259]:
+                          - generic [ref=e260]: Data API
+                        - img [ref=e262]
+                  - link "Vault Beta" [disabled] [ref=e265] [cursor=pointer]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/integrations/vault/overview
+                    - menuitem "Vault Beta" [disabled] [ref=e266]:
+                      - generic [ref=e268]:
+                        - generic "Vault" [ref=e269]:
+                          - generic [ref=e270]: Vault
+                          - generic [ref=e271]: Beta
+                        - img [ref=e273]
+              - generic [ref=e279]:
+                - generic [ref=e283]: Billing
+                - generic [ref=e284]:
+                  - link "Subscription" [disabled] [ref=e285] [cursor=pointer]:
+                    - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou/billing
+                    - menuitem "Subscription" [disabled] [ref=e286]:
+                      - generic [ref=e288]:
+                        - generic "Subscription" [ref=e289]:
+                          - generic [ref=e290]: Subscription
+                        - img [ref=e292]
+                  - link "Usage" [disabled] [ref=e295] [cursor=pointer]:
+                    - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou/usage?projectRef=mezqlcoxyrxvaznjlvov
+                    - menuitem "Usage" [disabled] [ref=e296]:
+                      - generic [ref=e298]:
+                        - generic "Usage" [ref=e299]:
+                          - generic [ref=e300]: Usage
+                        - img [ref=e302]
+        - separator [disabled] [ref=e305]:
+          - img [ref=e307]
+        - main [ref=e316]:
+          - generic [ref=e317]:
+            - generic [ref=e318]:
+              - generic [ref=e320]:
+                - generic [ref=e323]:
+                  - heading "API Keys" [level=1] [ref=e324]
+                  - paragraph [ref=e325]: Configure API keys to securely control access to your project
+                - link "Docs" [ref=e328] [cursor=pointer]:
+                  - /url: https://supabase.com/docs/guides/api/api-keys
+                  - img [ref=e330]
+                  - generic [ref=e333]: Docs
+              - navigation [ref=e334]:
+                - menu [ref=e335]:
+                  - listitem [ref=e336]:
+                    - link "Publishable and secret API keys" [ref=e337] [cursor=pointer]:
+                      - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/api-keys
+                  - listitem [ref=e338]:
+                    - link "Legacy anon, service_role API keys" [ref=e339] [cursor=pointer]:
+                      - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/api-keys/legacy
+            - generic [ref=e340]:
+              - generic [ref=e489]:
+                - generic [ref=e491]:
+                  - generic [ref=e495]:
+                    - code [ref=e496]: anon
+                    - code [ref=e497]: public
+                  - generic [ref=e498]:
+                    - group [ref=e500]:
+                      - textbox [ref=e501]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1lenFsY294eXJ4dmF6bmpsdm92Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgzODQ3NzcsImV4cCI6MjA5Mzk2MDc3N30.ul-mmBQcr3bQekb1XzhirOg5p4o9y0I-uVA3j8eNW8A
+                      - group [ref=e502]:
+                        - button "Copy" [ref=e503] [cursor=pointer]:
+                          - img [ref=e505]
+                          - generic [ref=e508]: Copy
+                    - paragraph [ref=e509]:
+                      - text: This key is safe to use in a browser if you have enabled Row Level Security for your tables and configured policies.
+                      - generic [ref=e510]:
+                        - text: Prefer using
+                        - link "Publishable API keys" [ref=e511] [cursor=pointer]:
+                          - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/api-keys/new
+                        - text: instead.
+                - generic [ref=e513]:
+                  - generic [ref=e517]:
+                    - code [ref=e518]: service_role
+                    - code [ref=e519]: secret
+                  - generic [ref=e520]:
+                    - group [ref=e522]:
+                      - textbox [ref=e523]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1lenFsY294eXJ4dmF6bmpsdm92Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3ODM4NDc3NywiZXhwIjoyMDkzOTYwNzc3fQ.M8ssUFFIN2qvlwrnXUNIr5cKjewbW1JKVmz_5y0fCwg
+                      - group [ref=e524]:
+                        - button "Copy" [ref=e542] [cursor=pointer]:
+                          - img [ref=e544]
+                          - generic [ref=e547]: Copy
+                    - paragraph [ref=e527]:
+                      - text: This key has the ability to bypass Row Level Security. Never share it publicly. If leaked, generate a new JWT secret immediately.
+                      - generic [ref=e528]:
+                        - text: Prefer using
+                        - link "Secret API keys" [ref=e529] [cursor=pointer]:
+                          - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/api-keys/new
+                        - text: instead.
+              - generic [ref=e535]:
+                - generic [ref=e536]:
+                  - paragraph [ref=e537]: Disable legacy API keys
+                  - paragraph [ref=e538]: Make sure you are no longer using your legacy API keys before proceeding.
+                - button "Disable JWT-based API keys" [ref=e540] [cursor=pointer]:
+                  - generic [ref=e541]: Disable JWT-based API keys
+  - alert [ref=e341]: API Keys (Legacy) | Settings | profile-architect | kjgoodwin01's Org | Supabase

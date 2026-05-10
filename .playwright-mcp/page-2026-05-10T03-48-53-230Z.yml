@@ -1,0 +1,332 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e462]:
+    - generic [ref=e466]:
+      - generic [ref=e468]:
+        - img [ref=e469]
+        - generic [ref=e471]:
+          - paragraph [ref=e472]: We've updated our Terms of Service
+          - generic [ref=e473]:
+            - generic [ref=e474]: ·
+            - button "Learn more" [ref=e476] [cursor=pointer]
+      - button "Dismiss banner" [ref=e477] [cursor=pointer]:
+        - img [ref=e479]
+    - banner [ref=e483]:
+      - generic [ref=e484]:
+        - generic [ref=e485]:
+          - link "Supabase" [ref=e486] [cursor=pointer]:
+            - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou
+            - img "Supabase" [ref=e487]
+          - generic [ref=e488]:
+            - img [ref=e490]
+            - generic [ref=e492]:
+              - link "kjgoodwin01's Org Free" [ref=e493] [cursor=pointer]:
+                - /url: /dashboard/org/nfxvjmuxooqgwzgjhyou
+                - img [ref=e494]
+                - generic [ref=e504]: kjgoodwin01's Org
+                - generic [ref=e505]: Free
+              - button [ref=e506] [cursor=pointer]:
+                - img [ref=e508]
+            - generic [ref=e511]:
+              - img [ref=e513]
+              - generic [ref=e515]:
+                - link "profile-architect" [ref=e516] [cursor=pointer]:
+                  - /url: /dashboard/project/mezqlcoxyrxvaznjlvov
+                  - img [ref=e517]
+                  - generic "profile-architect" [ref=e520]
+                - button [ref=e521] [cursor=pointer]:
+                  - img [ref=e523]
+              - img [ref=e527]
+              - generic [ref=e529]:
+                - link "main Production" [ref=e530] [cursor=pointer]:
+                  - /url: /dashboard/project/mezqlcoxyrxvaznjlvov
+                  - generic "main" [ref=e531]
+                  - generic [ref=e532]: Production
+                - button [ref=e533] [cursor=pointer]:
+                  - img [ref=e535]
+          - button "Connect" [ref=e539] [cursor=pointer]:
+            - img [ref=e541]
+            - generic [ref=e543]: Connect
+        - generic [ref=e544]:
+          - generic [ref=e546] [cursor=pointer]: Feedback
+          - generic [ref=e547]:
+            - button "Search..." [ref=e548]:
+              - generic [ref=e549]:
+                - img [ref=e550]
+                - paragraph [ref=e553]: Search...
+              - generic [ref=e555]: Ctrl K
+            - button [ref=e556] [cursor=pointer]:
+              - img [ref=e558]
+            - button [ref=e562] [cursor=pointer]:
+              - img [ref=e564]
+            - button [ref=e566] [cursor=pointer]:
+              - img [ref=e568]
+            - button [ref=e570] [cursor=pointer]:
+              - img [ref=e574]
+          - button "kjgoodwin01" [ref=e577] [cursor=pointer]:
+            - img "kjgoodwin01" [ref=e579]
+    - generic [ref=e580]:
+      - generic [ref=e584]:
+        - list [ref=e587]:
+          - generic [ref=e588]:
+            - listitem [ref=e589]:
+              - link "Project Overview" [ref=e590] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov
+                - img [ref=e591]
+                - generic: Project Overview
+            - listitem [ref=e593]:
+              - link "Table Editor" [ref=e830] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/editor
+                - img [ref=e831]
+                - generic: Table Editor
+            - listitem [ref=e594]:
+              - link "SQL Editor" [ref=e833] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/sql
+                - img [ref=e834]
+                - generic: SQL Editor
+          - generic [ref=e595]:
+            - listitem [ref=e596]:
+              - link "Database" [ref=e836] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/database/schemas
+                - img [ref=e837]
+                - generic: Database
+            - listitem [ref=e597]:
+              - link "Authentication" [ref=e841] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/users
+                - img [ref=e842]
+                - generic: Authentication
+            - listitem [ref=e598]:
+              - link "Storage" [ref=e844] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/storage/files
+                - img [ref=e845]
+                - generic: Storage
+            - listitem [ref=e599]:
+              - link "Edge Functions" [ref=e600] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/functions
+                - img [ref=e601]
+                - generic: Edge Functions
+            - listitem [ref=e606]:
+              - link "Realtime" [ref=e847] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/realtime/inspector
+                - img [ref=e848]
+                - generic: Realtime
+          - generic [ref=e607]:
+            - listitem [ref=e609]:
+              - link "Advisors" [ref=e850] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/advisors/security
+                - img [ref=e851]
+                - generic: Advisors
+            - listitem [ref=e610]:
+              - link "Observability" [ref=e853] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/observability
+                - img [ref=e854]
+                - generic: Observability
+            - listitem [ref=e611]:
+              - link "Logs" [ref=e612] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/logs/explorer
+                - img [ref=e613]
+                - generic: Logs
+            - listitem [ref=e614]:
+              - link "Integrations" [ref=e862] [cursor=pointer]:
+                - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/integrations
+                - img [ref=e863]
+                - generic: Integrations
+          - listitem [ref=e616]:
+            - link "Project Settings" [ref=e617] [cursor=pointer]:
+              - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/general
+              - img [ref=e618]
+              - generic: Project Settings
+        - button [ref=e623] [cursor=pointer]:
+          - img [ref=e625]
+      - main [ref=e635]:
+        - generic [ref=e636]:
+          - generic [ref=e640]:
+            - generic [ref=e641]:
+              - generic [ref=e643]:
+                - heading "profile-architect" [level=1] [ref=e645]
+                - generic [ref=e646]:
+                  - generic [ref=e647]: https://mezqlcoxyrxvaznjlvov.supabase.co
+                  - button "Copy" [ref=e648] [cursor=pointer]:
+                    - generic [ref=e649]: Copy
+                    - img [ref=e651]
+              - generic [ref=e655]:
+                - generic [ref=e661]:
+                  - generic [ref=e662]: Status
+                  - generic [ref=e664]: Coming up...
+                - generic [ref=e665]:
+                  - img [ref=e667]
+                  - generic [ref=e670]:
+                    - generic [ref=e671]: Compute
+                    - generic [ref=e676]: nano
+                - link "GitHub No repository connected" [ref=e873] [cursor=pointer]:
+                  - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/settings/integrations
+                  - generic [ref=e678]:
+                    - img [ref=e680]
+                    - generic [ref=e683]:
+                      - generic [ref=e684]: GitHub
+                      - paragraph [ref=e686]: No repository connected
+                - link "Recent branch No branches" [ref=e687] [cursor=pointer]:
+                  - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/branches
+                  - generic [ref=e688]:
+                    - img [ref=e690]
+                    - generic [ref=e694]:
+                      - generic [ref=e695]: Recent branch
+                      - paragraph [ref=e697]: No branches
+                - link "Last migration No migrations" [ref=e874] [cursor=pointer]:
+                  - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/database/migrations
+                  - generic [ref=e699]:
+                    - img [ref=e701]
+                    - generic [ref=e705]:
+                      - generic [ref=e706]: Last migration
+                      - paragraph [ref=e875]: No migrations
+                - link "Last backup No backups" [ref=e876] [cursor=pointer]:
+                  - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/database/backups/scheduled
+                  - generic [ref=e710]:
+                    - img [ref=e712]
+                    - generic [ref=e715]:
+                      - generic [ref=e716]: Last backup
+                      - paragraph [ref=e877]: No backups
+            - application [ref=e723]:
+              - group [ref=e726] [cursor=pointer]:
+                - generic [ref=e728]:
+                  - generic [ref=e729]:
+                    - generic [ref=e730]:
+                      - img [ref=e732]
+                      - generic [ref=e736]:
+                        - paragraph [ref=e737]: Primary Database
+                        - paragraph [ref=e738]:
+                          - generic [ref=e739]: East US (North Virginia)
+                        - paragraph [ref=e740]:
+                          - generic [ref=e741]: us-east-1
+                          - generic [ref=e742]: ·
+                          - generic [ref=e743]: t4g.nano
+                    - img "region icon" [ref=e744]
+                  - link "CPU 0% · Disk 0% · RAM 0%" [ref=e745]:
+                    - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/observability/database
+                    - generic [ref=e746]:
+                      - text: CPU
+                      - generic [ref=e747]: 0%
+                    - generic [ref=e748]: ·
+                    - generic [ref=e749]:
+                      - text: Disk
+                      - generic [ref=e750]: 0%
+                    - generic [ref=e751]: ·
+                    - generic [ref=e752]:
+                      - text: RAM
+                      - generic [ref=e753]: 0%
+              - img
+          - generic [ref=e757]:
+            - generic [ref=e758]:
+              - button "Drag to reorder section" [ref=e759]:
+                - img [ref=e760]
+              - generic [ref=e768]:
+                - heading "Get connected" [level=3] [ref=e770]
+                - generic [ref=e775]:
+                  - button "Framework Use a client library" [ref=e776]:
+                    - img [ref=e778]
+                    - generic [ref=e781]:
+                      - paragraph [ref=e782]: Framework
+                      - paragraph [ref=e783]: Use a client library
+                    - img [ref=e784]
+                  - button "Direct Connection string" [ref=e786]:
+                    - img [ref=e788]
+                    - generic [ref=e792]:
+                      - paragraph [ref=e793]: Direct
+                      - paragraph [ref=e794]: Connection string
+                    - img [ref=e795]
+                  - button "ORM Third-party library" [ref=e797]:
+                    - img [ref=e799]
+                    - generic [ref=e805]:
+                      - paragraph [ref=e806]: ORM
+                      - paragraph [ref=e807]: Third-party library
+                    - img [ref=e808]
+                  - button "MCP Connect your agent" [ref=e810]:
+                    - img [ref=e812]
+                    - generic [ref=e814]:
+                      - paragraph [ref=e815]: MCP
+                      - paragraph [ref=e816]: Connect your agent
+                    - img [ref=e817]
+                  - button "API Keys Manage project keys" [ref=e819]:
+                    - img [ref=e821]
+                    - generic [ref=e824]:
+                      - paragraph [ref=e825]: API Keys
+                      - paragraph [ref=e826]: Manage project keys
+                    - img [ref=e827]
+            - generic [ref=e879]:
+              - button "Drag to reorder section" [ref=e880]:
+                - img [ref=e881]
+              - generic [ref=e889]:
+                - generic [ref=e890]:
+                  - generic [ref=e891]:
+                    - generic [ref=e892]: "0"
+                    - generic [ref=e893]: Total Requests
+                  - button "Last 60 minutes" [ref=e894] [cursor=pointer]:
+                    - generic [ref=e895]: Last 60 minutes
+                    - img [ref=e897]
+                - generic [ref=e899]:
+                  - button "Scroll right" [ref=e900] [cursor=pointer]:
+                    - img [ref=e902]
+                  - region "Horizontally scrollable content" [ref=e904]:
+                    - generic [ref=e905]:
+                      - generic [ref=e907]:
+                        - generic [ref=e910]:
+                          - heading "Database requests" [level=3] [ref=e911]:
+                            - link "Database requests" [ref=e912] [cursor=pointer]:
+                              - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/editor
+                          - generic [ref=e913]: "0"
+                        - generic [ref=e918]:
+                          - img [ref=e919]
+                          - paragraph [ref=e921]: No data for selected period
+                      - generic [ref=e923]:
+                        - generic [ref=e926]:
+                          - heading "Auth requests" [level=3] [ref=e927]:
+                            - link "Auth requests" [ref=e928] [cursor=pointer]:
+                              - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/auth/users
+                          - generic [ref=e929]: "0"
+                        - generic [ref=e934]:
+                          - img [ref=e935]
+                          - paragraph [ref=e937]: No data for selected period
+                      - generic [ref=e939]:
+                        - generic [ref=e942]:
+                          - heading "Storage requests" [level=3] [ref=e943]:
+                            - link "Storage requests" [ref=e944] [cursor=pointer]:
+                              - /url: /dashboard/project/mezqlcoxyrxvaznjlvov/storage/buckets
+                          - generic [ref=e945]: "0"
+                        - generic [ref=e950]:
+                          - img [ref=e951]
+                          - paragraph [ref=e953]: No data for selected period
+                      - generic [ref=e955]:
+                        - generic [ref=e958]:
+                          - heading "Realtime requests" [level=3] [ref=e959]
+                          - generic [ref=e960]: "0"
+                        - generic [ref=e965]:
+                          - img [ref=e966]
+                          - paragraph [ref=e968]: No data for selected period
+            - generic [ref=e970]:
+              - button "Drag to reorder section" [ref=e971]:
+                - img [ref=e972]
+              - generic [ref=e980]:
+                - generic [ref=e981]:
+                  - heading "Advisor found no issues" [level=2] [ref=e982]
+                  - button "Ask Assistant" [ref=e983] [cursor=pointer]:
+                    - img [ref=e987]
+                    - generic [ref=e990]: Ask Assistant
+                - generic [ref=e992]:
+                  - img [ref=e993]
+                  - paragraph [ref=e995]: No security or performance issues found
+            - generic [ref=e997]:
+              - button "Drag to reorder section" [ref=e998]:
+                - img [ref=e999]
+              - generic [ref=e1007]:
+                - generic [ref=e1008]:
+                  - heading "Reports" [level=3] [ref=e1009]
+                  - button "Add block" [ref=e1011] [cursor=pointer]:
+                    - img [ref=e1013]
+                    - generic [ref=e1014]: Add block
+                - generic [ref=e1016]:
+                  - heading "Build a custom report" [level=4] [ref=e1017]
+                  - paragraph [ref=e1018]: Keep track of your most important metrics
+                  - button "Add your first block" [ref=e1019] [cursor=pointer]:
+                    - generic [ref=e1020]: Add your first block
+                    - img [ref=e1022]
+            - status [ref=e829]
+  - alert [ref=e109]: Supabase
