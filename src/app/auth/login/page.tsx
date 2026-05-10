@@ -85,11 +85,8 @@ export default function LoginPage() {
             </Button>
           </form>
 
-          <p className="text-center text-sm text-[var(--text3)] mt-6">
-            No account?{" "}
-            <Link href="/auth/register" className="text-accent hover:underline">
-              Create one →
-            </Link>
+          <p className="text-center text-xs text-[var(--text3)] mt-6 opacity-50">
+            Personal — single account only
           </p>
         </div>
       </div>

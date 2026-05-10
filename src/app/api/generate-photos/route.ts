@@ -15,7 +15,7 @@ const PHOTO_PROMPTS: Record<string, string> = {
     "confident masculine portrait of a man, direct eye contact, clean background, natural lighting, not overly posed, authentic",
 };
 
-const PHOTO_SCORES: Record<string, { score: number; reason: string; slot: string }> = {
+const PHOTO_META: Record<string, { score: number; reason: string; slot: string }> = {
   coffee_shop_candid: { score: 84, reason: "Warm + approachable. Intellectual signaling. Strong opener.", slot: "Photo #1 — highest-performing first impression type" },
   rooftop_night: { score: 78, reason: "Urban lifestyle, social proof, relaxed confidence.", slot: "Photo #2 — good trust-building follow-up" },
   outdoors_hiking: { score: 71, reason: "Active lifestyle, health signaling, non-try-hard.", slot: "Photo #3-4 — lifestyle anchor" },
@@ -24,14 +24,30 @@ const PHOTO_SCORES: Record<string, { score: number; reason: string; slot: string
   masculine_portrait: { score: 76, reason: "Direct confidence, eye contact, unambiguous intent.", slot: "Photo #1-2 — high initial attraction" },
 };
 
+async function pollPrediction(id: string, token: string, maxWaitMs = 60_000): Promise<string | null> {
+  const deadline = Date.now() + maxWaitMs;
+  while (Date.now() < deadline) {
+    await new Promise((r) => setTimeout(r, 2000));
+    const res = await fetch(`https://api.replicate.com/v1/predictions/${id}`, {
+      headers: { Authorization: `Token ${token}` },
+    });
+    const data = await res.json();
+    if (data.status === "succeeded") {
+      const output = data.output;
+      return Array.isArray(output) ? output[0] : (output ?? null);
+    }
+    if (data.status === "failed" || data.status === "canceled") return null;
+  }
+  return null;
+}
+
 export async function POST(request: NextRequest) {
   try {
     const { style } = await request.json();
     const token = process.env.REPLICATE_API_TOKEN;
+    const meta = PHOTO_META[style] ?? PHOTO_META.coffee_shop_candid;
 
     if (!token) {
-      // Return mock data if no token
-      const meta = PHOTO_SCORES[style] || PHOTO_SCORES.coffee_shop_candid;
       return NextResponse.json({
         id: crypto.randomUUID(),
         url: null,
@@ -43,9 +59,9 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    const promptText = PHOTO_PROMPTS[style] || PHOTO_PROMPTS.coffee_shop_candid;
+    const promptText = PHOTO_PROMPTS[style] ?? PHOTO_PROMPTS.coffee_shop_candid;
 
-    const response = await fetch("https://api.replicate.com/v1/predictions", {
+    const createRes = await fetch("https://api.replicate.com/v1/predictions", {
       method: "POST",
       headers: {
         Authorization: `Token ${token}`,
@@ -62,17 +78,20 @@ export async function POST(request: NextRequest) {
       }),
     });
 
-    const prediction = await response.json();
-    const meta = PHOTO_SCORES[style] || PHOTO_SCORES.coffee_shop_candid;
+    if (!createRes.ok) {
+      throw new Error(`Replicate error: ${createRes.status}`);
+    }
+
+    const prediction = await createRes.json();
+    const imageUrl = await pollPrediction(prediction.id, token);
 
     return NextResponse.json({
       id: prediction.id,
-      url: prediction.urls?.get || null,
+      url: imageUrl,
       category: style,
       predicted_score: meta.score,
       psychological_reason: meta.reason,
       slot_recommendation: meta.slot,
-      prediction_id: prediction.id,
     });
   } catch (error) {
     console.error("Photo generation error:", error);

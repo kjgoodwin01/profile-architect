@@ -98,11 +98,12 @@ export interface PhotoSlot {
 
 export interface GeneratedPhoto {
   id: string;
-  url: string;
+  url: string | null;
   category: PhotoCategory;
   predicted_score: number;
   psychological_reason: string;
   slot_recommendation: string;
+  mock?: boolean;
 }
 
 // ─── Builder ─────────────────────────────────────────────────────────────────

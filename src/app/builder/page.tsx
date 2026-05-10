@@ -3,8 +3,11 @@ import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
+import { useUserStore } from "@/stores/userStore";
 import type { Platform, ProfilePrompt, ChatMessage } from "@/types";
-import { RefreshCw, Copy, Check, Send } from "lucide-react";
+import { RefreshCw, Copy, Check, Send, Trash2 } from "lucide-react";
+
+type BadgeVariant = "success" | "warning" | "danger";
 
 const STARTER_PROMPTS: ProfilePrompt[] = [
   {
@@ -42,29 +45,42 @@ const STARTER_PROMPTS: ProfilePrompt[] = [
   },
 ];
 
-const INITIAL_MESSAGES: ChatMessage[] = [
-  {
-    id: "init",
-    role: "assistant",
-    content:
-      "I've analyzed your profile archetype — you're calibrated as a **Calm Achiever**: competent, low-key confident, dry humor. Your prompts above lean into that. What would you like to refine?",
-    timestamp: new Date(),
-  },
-];
+function scoreColor(s: number): BadgeVariant {
+  if (s >= 80) return "success";
+  if (s >= 65) return "warning";
+  return "danger";
+}
 
 export default function BuilderPage() {
+  const { chatHistory, addChatMessage, clearChat, latestAnalysis } = useUserStore();
   const [platform, setPlatform] = useState<Platform>("hinge");
   const [prompts, setPrompts] = useState<ProfilePrompt[]>(STARTER_PROMPTS);
   const [regeneratingId, setRegeneratingId] = useState<string | null>(null);
   const [copiedId, setCopiedId] = useState<string | null>(null);
-  const [messages, setMessages] = useState<ChatMessage[]>(INITIAL_MESSAGES);
   const [input, setInput] = useState("");
   const [chatLoading, setChatLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
+  // Seed initial message once if history is empty
+  const [seeded, setSeeded] = useState(false);
+  useEffect(() => {
+    if (!seeded && chatHistory.length === 0) {
+      const archetype = latestAnalysis?.archetype ?? "Calm Achiever";
+      addChatMessage({
+        id: "init",
+        role: "assistant",
+        content: `I've analyzed your profile archetype — you're calibrated as a **${archetype}**: competent, low-key confident, dry humor. Your prompts above lean into that. What would you like to refine?`,
+        timestamp: new Date(),
+      });
+      setSeeded(true);
+    } else {
+      setSeeded(true);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  }, [chatHistory]);
 
   async function regeneratePrompt(prompt: ProfilePrompt) {
     setRegeneratingId(prompt.id);
@@ -108,24 +124,24 @@ export default function BuilderPage() {
       content: input,
       timestamp: new Date(),
     };
-    setMessages((prev) => [...prev, userMsg]);
+    addChatMessage(userMsg);
     setInput("");
     setChatLoading(true);
 
-    const aiMsg: ChatMessage = {
-      id: (Date.now() + 1).toString(),
+    const aiMsgId = (Date.now() + 1).toString();
+    addChatMessage({
+      id: aiMsgId,
       role: "assistant",
       content: "",
       timestamp: new Date(),
-    };
-    setMessages((prev) => [...prev, aiMsg]);
+    });
 
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          messages: [...messages, userMsg].map((m) => ({
+          messages: [...chatHistory, userMsg].map((m) => ({
             role: m.role,
             content: m.content,
           })),
@@ -147,27 +163,25 @@ export default function BuilderPage() {
           try {
             const parsed = JSON.parse(data);
             fullText += parsed.text;
-            setMessages((prev) =>
-              prev.map((m) =>
-                m.id === aiMsg.id ? { ...m, content: fullText } : m
-              )
-            );
+            // Update the message in the store by replacing with full text
+            useUserStore.setState((state) => ({
+              chatHistory: state.chatHistory.map((m) =>
+                m.id === aiMsgId ? { ...m, content: fullText } : m
+              ),
+            }));
           } catch {}
         }
       }
     } catch {
-      setMessages((prev) =>
-        prev.map((m) =>
-          m.id === aiMsg.id ? { ...m, content: "Error — try again." } : m
-        )
-      );
+      useUserStore.setState((state) => ({
+        chatHistory: state.chatHistory.map((m) =>
+          m.id === aiMsgId ? { ...m, content: "Error — try again." } : m
+        ),
+      }));
     } finally {
       setChatLoading(false);
     }
   }
-
-  const scoreColor = (s: number) =>
-    s >= 80 ? "success" : s >= 65 ? "warning" : "danger";
 
   return (
     <div className="p-8 max-w-3xl">
@@ -215,7 +229,7 @@ export default function BuilderPage() {
               )}
             </p>
             <div className="flex items-center gap-2 mb-3">
-              <Badge variant={scoreColor(prompt.score) as "success" | "warning" | "danger"}>
+              <Badge variant={scoreColor(prompt.score)}>
                 {prompt.score}/100
               </Badge>
               {prompt.strengths.map((s) => (
@@ -249,12 +263,22 @@ export default function BuilderPage() {
       </div>
 
       {/* AI Coach Chat */}
-      <h2 className="font-display font-bold text-sm text-[var(--text)] mb-4">
-        AI Coach
-      </h2>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="font-display font-bold text-sm text-[var(--text)]">
+          AI Coach
+        </h2>
+        {chatHistory.length > 1 && (
+          <button
+            onClick={clearChat}
+            className="flex items-center gap-1.5 text-xs text-[var(--text3)] hover:text-red-400 transition-colors"
+          >
+            <Trash2 size={12} /> Clear chat
+          </button>
+        )}
+      </div>
       <Card className="p-0 overflow-hidden">
         <div className="p-4 flex flex-col gap-3 max-h-72 overflow-y-auto">
-          {messages.map((msg) => (
+          {chatHistory.map((msg) => (
             <div
               key={msg.id}
               className={`flex gap-2.5 ${msg.role === "user" ? "flex-row-reverse" : ""}`}
@@ -282,7 +306,7 @@ export default function BuilderPage() {
               />
             </div>
           ))}
-          {chatLoading && messages[messages.length - 1]?.content === "" && (
+          {chatLoading && chatHistory[chatHistory.length - 1]?.content === "" && (
             <div className="flex gap-1 pl-10">
               {[0, 1, 2].map((i) => (
                 <span

@@ -85,11 +85,13 @@ export const useUserStore = create<UserStore>()(
       name: "profile-architect-store",
       partialize: (state) => ({
         onboardingData: state.onboardingData,
+        onboardingStep: state.onboardingStep,
         onboardingComplete: state.onboardingComplete,
         latestAnalysis: state.latestAnalysis,
         activePlatform: state.activePlatform,
         prompts: state.prompts,
         generatedPhotos: state.generatedPhotos,
+        chatHistory: state.chatHistory,
       }),
     }
   )

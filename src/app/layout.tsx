@@ -11,6 +11,13 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
     title: "Profile Architect",
   },
+  icons: {
+    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+  },
   openGraph: {
     title: "Profile Architect",
     description: "Your profile is leaving matches on the table. Fix that.",

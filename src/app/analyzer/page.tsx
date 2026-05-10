@@ -4,21 +4,35 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { ScoreRing } from "@/components/ui/ScoreRing";
+import { useUserStore } from "@/stores/userStore";
 import type { ProfileAnalysis } from "@/types";
 
+const DEMO_PROFILE = `Bio: Just a guy who loves hiking, cooking, and travelling. Looking for someone to adventure with.
+
+Prompt 1 - My simple pleasures: Coffee, good music, and long drives.
+Prompt 2 - I'll know it's love if: We can sit in comfortable silence.
+Prompt 3 - Typical Sunday: Gym, meal prep, maybe a hike if the weather's good.`;
+
+type BadgeVariant = "danger" | "warning" | "success" | "accent";
+
+function severityVariant(s: string): BadgeVariant {
+  if (s === "critical") return "danger";
+  if (s === "warning") return "warning";
+  if (s === "strong") return "success";
+  return "accent";
+}
+
 export default function AnalyzerPage() {
+  const { setAnalysis, latestAnalysis } = useUserStore();
   const [profileText, setProfileText] = useState("");
   const [loading, setLoading] = useState(false);
-  const [analysis, setAnalysis] = useState<ProfileAnalysis | null>(null);
+  const [analysis, setLocalAnalysis] = useState<ProfileAnalysis | null>(latestAnalysis);
   const [error, setError] = useState("");
 
   async function runAnalysis() {
-    if (!profileText.trim() && !analysis) {
-      // Use demo data if empty
-      setProfileText(
-        "Bio: Just a guy who loves hiking, cooking, and travelling. Looking for someone to adventure with.\n\nPrompt 1 - My simple pleasures: Coffee, good music, and long drives.\nPrompt 2 - I'll know it's love if: We can sit in comfortable silence.\nPrompt 3 - Typical Sunday: Gym, meal prep, maybe a hike if the weather's good."
-      );
-    }
+    const text = profileText.trim() || DEMO_PROFILE;
+    if (!profileText.trim()) setProfileText(DEMO_PROFILE);
+
     setLoading(true);
     setError("");
 
@@ -26,20 +40,18 @@ export default function AnalyzerPage() {
       const res = await fetch("/api/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ profileText: profileText || "Demo profile" }),
+        body: JSON.stringify({ profileText: text }),
       });
       if (!res.ok) throw new Error("Analysis failed");
-      const data = await res.json();
+      const data: ProfileAnalysis = await res.json();
+      setLocalAnalysis(data);
       setAnalysis(data);
-    } catch (e) {
-      setError("Analysis failed. Check your API key in .env.local");
+    } catch {
+      setError("Analysis failed. Check that ANTHROPIC_API_KEY is set in .env.local");
     } finally {
       setLoading(false);
     }
   }
-
-  const severityVariant = (s: string) =>
-    s === "critical" ? "danger" : s === "warning" ? "warning" : s === "strong" ? "success" : "accent";
 
   return (
     <div className="p-8 max-w-3xl">
@@ -68,7 +80,7 @@ export default function AnalyzerPage() {
         )}
         <div className="flex justify-between items-center mt-4">
           <p className="text-xs text-[var(--text3)]">
-            Leave blank to analyze a sample profile
+            {profileText.trim() ? `${profileText.trim().length} chars` : "Leave blank to analyze a sample profile"}
           </p>
           <Button onClick={runAnalysis} loading={loading}>
             {loading ? "Analyzing..." : "Analyze Profile →"}
@@ -113,7 +125,7 @@ export default function AnalyzerPage() {
             <div className="flex flex-col divide-y divide-[var(--border)]">
               {analysis.feedback.map((item, i) => (
                 <div key={i} className="py-3 flex items-start gap-3">
-                  <Badge variant={severityVariant(item.severity) as "danger" | "warning" | "success" | "accent"}>
+                  <Badge variant={severityVariant(item.severity)}>
                     {item.severity}
                   </Badge>
                   <div>
